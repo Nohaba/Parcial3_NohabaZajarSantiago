@@ -67,7 +67,7 @@ namespace Concert.Controllers
                 }
                 else
                 {
-                    TempData["TicketValido"] ="TICKET VERIFICADO Y VALIDADO";
+                    TempData["TicketValido"] ="INGRESE LA INFORMACION DEL TICKET:";
                     return RedirectToAction("Edit", new { id = boleta.Id });
                 }
             }
