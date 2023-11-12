@@ -7,6 +7,12 @@
 <h1>Edit</h1>
 
 <h4>Ticket</h4>
+<br /> 
+@if (TempData["boletaValida"] != null)
+{
+    <div class="alert alert-sucess">@TempData["boletaValida"]</div>
+}
+
 <hr />
 <div class="row">
     <div class="col-md-4">
