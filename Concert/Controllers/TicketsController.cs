@@ -50,7 +50,7 @@ namespace Concert.Controllers
 
             if (!Guid.TryParse(boletaId, out id))
             {
-                TempData["TicketInvalido"] = "Boleta No Válida";
+                TempData["TicketInvalido"] ="Boleta No Válida";
             }
             else
             {
@@ -58,16 +58,16 @@ namespace Concert.Controllers
 
                 if (boleta == null)
                 {
-                    TempData["TicketInvalido"] = "Boleta No Valida";
+                    TempData["TicketInvalido"] ="Boleta No Valida";
                 }
                 else if (!boleta.IsUsed.ToString().ToLower().Equals("false"))
                 {
-                    TempData["TicketEnUso"] = "EL TICKET YA ESTA EN USO, AQUI TODA LA INFORMACION:";
+                    TempData["TicketEnUso"] ="EL TICKET YA ESTA EN USO, AQUI TODA LA INFORMACION:";
                     return RedirectToAction("Details", new { id = boleta.Id });
                 }
                 else
                 {
-                    TempData["TicketValido"] = "TICKET VERIFICADO Y VALIDADO";
+                    TempData["TicketValido"] ="TICKET VERIFICADO Y VALIDADO";
                     return RedirectToAction("Edit", new { id = boleta.Id });
                 }
             }
