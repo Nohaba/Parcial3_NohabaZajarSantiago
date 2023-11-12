@@ -6,11 +6,6 @@
 
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css" />
 
-<!--
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
--->
 <div class="row">
     <div class="col-md-12">
         <div class="panel panel-default">
@@ -25,17 +20,17 @@
                     </div>
                     <br />
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">VALIDA</button>
+                        <button type="submit" class="btn btn-outline-success">VALIDAR</button>
                     </div>
                 </form>
                 <br />
-                @if (TempData["boletaValida"] != null)
+                @if (TempData["TicketValido"] != null)
                 {
-                    <div class="alert alert-success">@TempData["boletaValida"]</div>
+                    <div class="alert alert-success">@TempData["TicketValido"]</div>
                 }
-                @if (TempData["boletaInvalida"] != null)
+                @if (TempData["TicketInvalido"] != null)
                 {
-                    <div class="alert alert-danger">@TempData["boletaInvalida"]</div>
+                    <div class="alert alert-danger">@TempData["TicketInvalido"]</div>
                 }
             </div>
         </div>

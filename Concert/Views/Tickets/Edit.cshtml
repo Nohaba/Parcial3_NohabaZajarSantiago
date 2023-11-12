@@ -4,13 +4,13 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>¡EXITO!</h1>
 
-<h4>Ticket</h4>
+<h4>Ticket Validado</h4>
 <br /> 
-@if (TempData["boletaValida"] != null)
+@if (TempData["TicketValido"] != null)
 {
-    <div class="alert alert-sucess">@TempData["boletaValida"]</div>
+    <div class="alert alert-sucess">@TempData["TicketValido"]</div>
 }
 
 <hr />
@@ -35,15 +35,13 @@
                 <span asp-validation-for="EntranceGate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Guardar" class="btn btn-outline-primary" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

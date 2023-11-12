@@ -7,11 +7,11 @@
 <h1>¡¡ALERTA!!</h1>
 
 <div>
-    <h4>BOLETA YA FUE USADA</h4>
+    <h4>TICKET YA ESTA EN USO</h4>
     <br />
-    @if (TempData["BoletaEnUso"] != null)
+    @if (TempData["TicketEnUso"] != null)
     {
-        <div class="alert alert-sucess">@TempData["boletaUsada"]</div>
+        <div class="alert alert-sucess">@TempData["TicketEnUso"]</div>
     }
     <hr />
     <dl class="row">
@@ -36,5 +36,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Index">Volver</a>
+    <a asp-action="Index" class="btn btn-outline-success">Regresar</a>
 </div>
+
