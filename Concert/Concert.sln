@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concert", "Concert.csproj", "{AD50C1E8-2AA0-4A8E-8A7F-42985C63117F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD50C1E8-2AA0-4A8E-8A7F-42985C63117F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD50C1E8-2AA0-4A8E-8A7F-42985C63117F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD50C1E8-2AA0-4A8E-8A7F-42985C63117F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD50C1E8-2AA0-4A8E-8A7F-42985C63117F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3659B1D-C542-46F2-919F-233A7E096BE3}
+	EndGlobalSection
+EndGlobal
